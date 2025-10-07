@@ -1,17 +1,22 @@
-<!-- // Following program is to make a simple calendar -->
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" type="css/text">
+    <title>Calendar Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        ul { list-style: none; padding: 0; }
+        li { display: flex; justify-content: space-between; margin-bottom: 5px; }
+        li span { width: 14%; text-align: center; }
+        li.weekdays span { font-weight: bold; }
+    </style>
 </head>
 <body>
-    <h1>Live Output</h1>
-    <label for="calendar" >Select Month: </label>
-    <select  id="calendar">
+    <h1>Live Calendar</h1>
+    <label for="calendar">Select Month: </label>
+    <select id="calendar">
         <option>January</option>
         <option>February</option>
         <option>March</option>
@@ -26,8 +31,7 @@
         <option>December</option>
     </select>
 
-    <h2>calendar will be shown here once you select month</h2>
+    <h2>Calendar will be shown here once you select a month</h2>
     <script src="snap.js"></script>
-   
 </body>
 </html>
